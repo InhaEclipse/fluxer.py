@@ -26,6 +26,7 @@ classifiers = [
 ]
 dependencies = [
     "aiohttp>=3.9.0,<4.0.0",
+    "setuptools>=82.0.0",
 ]
 
 [project.optional-dependencies]
@@ -37,3 +38,9 @@ Issues = "https://github.com/akarealemil/fluxer.py/issues"
 
 [tool.setuptools.packages.find]
 include = ["fluxer*"]
+
+[dependency-groups]
+dev = [
+    "pyright>=1.1.408",
+    "ruff>=0.15.0",
+]
